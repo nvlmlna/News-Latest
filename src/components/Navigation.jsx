@@ -11,9 +11,9 @@ export default function Navigation() {
   const handleTabClick = (item) => {
     setActiveTab(item);
     // Navigasi ke halaman sesuai tab
-    if (item === "Home") navigate("/");
-    else if (item === "Latest News") navigate("/latest-news");
-    else if (item === "Trending") navigate("/trending");
+    if (item === "Home") navigate("/News-W/");
+    else if (item === "Latest News") navigate("/News-W/Latest-News");
+    else if (item === "Trending") navigate("/News-W/Trending");
   };
 
   return (

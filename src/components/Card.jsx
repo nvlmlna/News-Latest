@@ -11,10 +11,10 @@ const Card = ({post}) => {
         />
         <h2 className="text-xl font-bold text-gray-800">{post.title}</h2>
         <p className="text-sm text-gray-500 mb-2">{post.date}</p>
-        <p className="text-gray-600">{post.excerpt}</p>
+        <p className="text- text-gray-600">{post.excerpt}</p>
 
         <Link to={`/beritarincian/${post.id}`}>
-        <p className="text-sm hover:underline">Read More</p>
+        <p className="text-sm hover:underline mt-3">Read More</p>
         </Link>
     </div>
   )

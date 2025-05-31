@@ -1,9 +1,21 @@
-import React from 'react'
+import React from 'react';
+import { posts } from "../data/posts-Robotic";
+import Card from "../components/Card";
 
 const Robotic = () => {
   return (
-    <div  className="text-3xl font-bold tracking-[.3em] text-black-800 text-opacity-30 bg-gray-300 min-h-screen">
-      robot jelek
+    <div className="text-3xl font-bold  text-black-800 text-opacity-30 bg-gray-300 min-h-screen">
+      <h1 className="text-3x1 font-bold text-center  mt-8 ">Robotic News Latest</h1>
+
+      {posts && posts.length > 0 ? (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
+          {posts.map((post) => (
+            <Card key={post.id} post={post} />
+          ))}
+        </div>
+      ) : (
+        <p className="text-center text-gray-600 text-xl mt-32 mx-auto w-1/2">Tidak ada post tersedia</p>
+      )}
     </div>
   )
 }

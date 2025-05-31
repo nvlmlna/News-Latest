@@ -9,6 +9,8 @@ import Cybersecurity from "./halaman/Cybersecurity";
 import Error from "./halaman/Error";
 import IOT from "./halaman/IOT";
 import EdTech from "./halaman/EdTech";
+import Latestnews from "./halaman/Latestnews";
+import Trending from "./halaman/Trending";
 
 function AppRoutes() {
   return (
@@ -32,6 +34,8 @@ function AppRoutes() {
         <Route path="/News-W/IOT" element={<IOT />} />
         <Route path="/News-W/error" element={<Error />} />
         <Route path="/News-W/EdTech" element={<EdTech />} />
+        <Route path="/News-W/latest-news" element={<Latestnews />} />
+        <Route path="/News-W/Trending" element={<Trending />} />
       </Routes>
     </div>
   );
