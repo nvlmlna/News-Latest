@@ -5,17 +5,21 @@ import Card from "../components/Card";
 const Cybersecurity = () => {
   return (
     <div className="text-3xl font-bold  text-black-800 text-opacity-30 bg-gray-300 min-h-screen">
-      <h1 className="text-3x1 font-bold text-center  mt-8 ">Cybersecurity News Latest</h1>
-
-      {posts && posts.length > 0 ? (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
-          {posts.map((post) => (
-            <Card key={post.id} post={post} />
-          ))}
-        </div>
-      ) : (
-        <p className="text-center text-gray-600">Tidak ada post tersedia</p>
+      {posts && posts.length > 0 && (
+      <h1 className="text-2xl font-bold text-center mt-12 ">Cybersecurity News Latest</h1>
       )}
+
+      <div className="flex items-center justify-center flex-1">
+        {posts && posts.length > 0 ? (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6 w-full text-lg">
+            {posts.map((post) => (
+              <Card key={post.id} post={post} />
+            ))}
+          </div>
+      ) : (
+        <p className="text-center text-gray-600 text-xl mt-56 mx-auto w-1/2">Tidak ada post tersedia</p>
+      )}
+    </div>
     </div>
   )
 }
