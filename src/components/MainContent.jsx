@@ -7,7 +7,7 @@ export default function MainContent () {
             Ocean<br />
             News
           </h1>
-          <p className="text-sm font-semibold mt-6 text-gray-700 tracking-wider">
+          <p className="text-sm font-semibold mt-6 text-gray-700 dark:text-gray-400 tracking-wider">
             Matilah engkau mati<br />
             kau akan lahir berkali-kali<br />
             -Sang Penyair-

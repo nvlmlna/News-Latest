@@ -4,7 +4,7 @@ import Card from "../components/Card";
 
 const AI = () => {
   return (
-    <div className="text-3xl font-bold  text-black-800 text-opacity-30 bg-gray-300 min-h-screen">
+    <div className="text-3xl font-bold  text-black-800 dark:text-white text-opacity-30 bg-gray-300 dark:bg-gray-800 min-h-screen">
       {posts && posts.length > 0 && (
       <h1 className="text-2xl font-bold text-center mt-12 ">AI News Latest</h1>
       )}
