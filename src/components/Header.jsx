@@ -1,17 +1,20 @@
 import { useState, useEffect } from "react";
-import { FaSearch, FaSun, FaMoon } from "react-icons/fa";
+import { FaSearch, FaSun, FaMoon, FaFilter } from "react-icons/fa";
 import { Menu } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import Profile from "./ProfileDropdown";
-import { useNavigate } from "react-router-dom";
-import allposts from "../data/index";
+import { useNavigate, useLocation, useSearchParams } from "react-router-dom";
+import { searchPosts, allposts } from "../data/index";
 
 export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const navigate = useNavigate();
+  const [searchParams, setSearchParams] = useSearchParams();
   const [query, setQuery] = useState("");
   const [theme, setTheme] = useState(() => localStorage.getItem("theme") || "light");
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  const [searchResults, setSearchResults] = useState([]);
+  const [selectedCategory, setSelectedCategory] = useState("");
 
   useEffect(() => {
     const handleResize = () => {
@@ -30,6 +33,24 @@ export default function Header() {
     }
   }, [theme]);
 
+  useEffect(() => {
+    const results = searchPosts(query, ""); // Cari tanpa filter kategori di header
+    setSearchResults(results);
+  }, [query]);
+
+  useEffect(() => {
+    // Update URL dengan selectedCategory
+    if (location.pathname === "/News-W/SearchResults") {
+      const params = new URLSearchParams(searchParams);
+      if (selectedCategory) {
+        params.set("category", selectedCategory);
+      } else {
+        params.delete("category");
+      }
+      setSearchParams(params, { replace: true });
+    }
+  }, [selectedCategory, location.pathname, searchParams, setSearchParams]);
+
   const switchTheme = (e) => {
     const newTheme = e.target.checked ? "dark" : "light";
     setTheme(newTheme);
@@ -37,15 +58,10 @@ export default function Header() {
   };
 
   const handleSearch = (e) => {
-    if (e.key === "Enter") {
-      const formatted = query.trim().toLowerCase();
-      if (formatted === "ai") navigate("/News-W/AI");
-      else if (formatted === "robotic") navigate("/News-W/Robotic");
-      else if (formatted === "cybersecurity") navigate("/News-W/Cybersecurity");
-      else if (formatted === "iot") navigate("/News-W/IOT");
-      else if (formatted === "edtech") navigate("/News-W/EdTech");
-      else if (formatted === "home") navigate("/");
-      else navigate("/News-W/Error");
+    if (e.key === "Enter" && query.trim()) {
+      navigate(`/News-W/Search?q=${encodeURIComponent(query)}`);
+      setSearchResults([]);
+      setQuery("");
     }
   };
 
@@ -53,6 +69,8 @@ export default function Header() {
   const handleLogoClick = () => {
     navigate("/News-W/"); // Arahkan ke halaman utama
   };
+
+  const isSearchPage = location.pathname === "/News-W/Search";
 
   return (
     <header className="relative z-50 w-full bg-[#bdbdbd] dark:bg-[#1a1a1a] shadow-md px-3 sm:px-6 py-3 sm:py-4 transition-colors duration-300">
@@ -90,8 +108,25 @@ export default function Header() {
           </div>
         </div>
 
+          
+        <div className="relative flex justify-center w-full md:w-auto z-50">
+          <AnimatePresence>
+            {query.trim() && (
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.2 }}
+                className="fixed inset-0 bg-white/30 dark:bg-black/30 backdrop-blur-sm z-40"
+                onClick={() => {
+                  setQuery("");
+                  setSearchResults([]);
+                }}
+              />
+            )}
+          </AnimatePresence>
+
           {/* Search Bar */}
-        <div className="flex-grow md:flex md:justify-center w-full md:w-auto">
            <div className="flex items-center bg-gray-200 dark:bg-gray-700 rounded-full px-3 py-2 w-full md:w-96 max-w-xs mx-auto">
                 <input
                 type="text"
@@ -103,7 +138,53 @@ export default function Header() {
                   />
                   <FaSearch className="text-gray-500 dark:text-gray-300" />
             </div>
-          </div>
+
+            {isSearchPage && isMobile && (
+              <button
+                onClick={() => setIsFilterOpen(!isFilterOpen)}
+                className="p-2 bg-gray-200 dark:bg-gray-700 rounded-full text-gray-500 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600"
+              >
+                <FaFilter className="text-lg" />
+                
+              </button>
+            )}
+          
+
+          {/* Dropdown Hasil Pencarian */}
+          <AnimatePresence>
+            {query.trim() && (
+              <motion.div
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -10 }}
+                transition={{ duration: 0.2 }}
+                className=" absolute top-full mt-2 w-full max-w-xs -translate-x-1/2 md:w-96 md:left-0 md:translate-x-0 bg-white dark:bg-gray-700 rounded-lg shadow-xl z-50 max-h-64 overflow-y-auto"
+              >
+                {searchResults.length > 0 ? (
+                  searchResults.slice(0, 5).map((post) => (
+                    <div
+                      key={post.id}
+                      className="px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer"
+                      onClick={() => {
+                        window.open(post.url, "_blank");
+                        setQuery("");
+                        setSearchResults([]);
+                      }}
+                    >
+                      <h3 className="text-sm font-semibold text-gray-800 dark:text-white">{post.title}</h3>
+                      <p className="text-xs text-gray-500 dark:text-gray-300">{post.excerpt.slice(0, 50)}...</p>
+                      <span className="text-xs text-blue-500">{post.category}</span>
+                    </div>
+                  ))
+                ) : (
+                  <div className="px-4 py-2 text-sm text-gray-500 dark:text-gray-300">
+                    Tidak ada hasil untuk "{query}"
+                  </div>
+                )}
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </div>
 
 
         {/* Right Side (Desktop only) */}

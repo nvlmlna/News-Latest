@@ -11,6 +11,7 @@ import IOT from "./halaman/IOT";
 import EdTech from "./halaman/EdTech";
 import Latestnews from "./halaman/Latestnews";
 import Trending from "./halaman/Trending";
+import SearchResults from "./halaman/SearchResults";
 
 function AppRoutes() {
   return (
@@ -33,6 +34,7 @@ function AppRoutes() {
         <Route path="/News-W/Cybersecurity" element={<Cybersecurity />} />
         <Route path="/News-W/IOT" element={<IOT />} />
         <Route path="/News-W/error" element={<Error />} />
+        <Route path="/News-W/Search" element={<SearchResults />} />
         <Route path="*" element={<Error />} />
         <Route path="/News-W/EdTech" element={<EdTech />} />
         <Route path="/News-W/latest-news" element={<Latestnews />} />

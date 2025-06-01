@@ -7,6 +7,7 @@ export const posts = [
     content: "How to make her mine.",
     date: "2025-06-01",
     imageUrl: "",
+    category: "AI",
   },
   {
     id: "2",
@@ -16,6 +17,7 @@ export const posts = [
     date: "2025-06-01",
     imageUrl: "",
     url: "",
+    category: "AI",
   },
   {
     id: "3",
@@ -25,6 +27,7 @@ export const posts = [
     date: "2025-06-01",
     imageUrl: "",
     url: "",
+    category: "AI",
   },
   {
     id: "4",
@@ -34,6 +37,7 @@ export const posts = [
     date: "2025-06-01",
     imageUrl: "",
     url: "",
+    category: "AI",
   },
   {
     id: "5",
@@ -43,6 +47,7 @@ export const posts = [
     date: "2025-06-01",
     imageUrl: "",
     url: "",
+    category: "AI",
   },
   {
     id: "6",
@@ -52,6 +57,7 @@ export const posts = [
     date: "2025-06-01",
     imageUrl: "",
     url: "",
+    category: "AI",
   },
   {
     id: "7",
@@ -61,6 +67,7 @@ export const posts = [
     date: "2025-06-01",
     imageUrl: "",
     url: "",
+    category: "AI",
   },
   {
     id: "8",
@@ -70,6 +77,7 @@ export const posts = [
     date: "2025-06-01",
     imageUrl: "",
     url: "",
+    category: "AI",
   },
   {
     id: "9",
@@ -79,6 +87,7 @@ export const posts = [
     date: "2025-06-01",
     imageUrl: "",
     url: "",
+    category: "AI",
   },
   {
     id: "10",
@@ -88,6 +97,7 @@ export const posts = [
     date: "2025-06-01",
     imageUrl: "",
     url: "",
+    category: "AI",
   },
   {
     id: "11",
@@ -97,6 +107,7 @@ export const posts = [
     date: "2025-06-01",
     imageUrl: "",
     url: "",
+    category: "AI",
   },
 
 ];

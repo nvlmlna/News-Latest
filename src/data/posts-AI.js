@@ -9,6 +9,7 @@ export const posts = [
     date: "2025-06-01",
     imageUrl: "https://economictimes.indiatimes.com/thumb/msid-121546421,width-1200,height-900,resizemode-4,imgsize-123456/meta-ai-automation.jpg",
     url: "https://economictimes.indiatimes.com/tech/artificial-intelligence/meta-to-use-ai-for-90-of-privacy-and-safety-checks-report/articleshow/121546421.cms",
+    category: "AI",
   },
   {
     id: "AI 2",
@@ -18,6 +19,7 @@ export const posts = [
     date: "2025-06-01",
     imageUrl: "https://www.thescottishsun.co.uk/wp-content/uploads/sites/2/2025/05/digital-generated-image-artificial-intelligence-971389575.jpg?w=620",
     url: "https://www.thescottishsun.co.uk/motors/14871235/ai-saves-motorists-repair-bills/",
+    category: "AI",
   },
    {
     id: "AI 3",
@@ -27,6 +29,7 @@ export const posts = [
     date: "2024-09-26",
     imageUrl: "https://helios-i.mashable.com/imagery/articles/07r668h4bWjbkVa31FcKWoG/hero-image.fill.size_1248x702.v1748632494.jpg",
     url: "https://mashable.com/article/google-veo-3-ai-video",
+    category: "AI",
   },
   {
     id: "AI 4",
@@ -36,6 +39,7 @@ export const posts = [
     date: "2025-05-31",
     imageUrl: "https://nypost.com/wp-content/uploads/sites/2/2025/05/anthropic-ceo-dario-amodei-chief-105129350_44e665.jpg?resize=576,384&quality=75&strip=all",
     url: "https://nypost.com/2025/05/31/business/ceo-warns-ai-could-wipe-out-1-in-2-white-collar-jobs-in-next-five-years/",
+    category: "AI",
   },
   {
     id: "AI 5",
@@ -45,6 +49,7 @@ export const posts = [
     date: "2025-05-31",
     imageUrl: "https://static.toiimg.com/thumb/msid-121491087,imgsize-39766,width-400,resizemode-4/Nvidia-CEO-Jensen-Huang-issues-urgent-AI-warning.jpg",
     url: "https://timesofindia.indiatimes.com/technology/tech-news/nvidia-ceo-jensen-huang-issues-urgent-ai-warning-youre-going-to-lose-your-job-to-someone-who-/articleshow/121489755.cms",
+    category: "AI",
   },
   {
     id: "AI 6",
@@ -54,6 +59,7 @@ export const posts = [
     date: "2025-05-31",
     imageUrl: "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2025%2F05%2F31%2Fturn-text-prompts-into-lego-designs-legogpt-ai-news-001.jpg?q=90&w=1400&cbr=1&fit=max",
     url: "https://hypebeast.com/2025/5/turn-text-prompts-into-lego-designs-legogpt-ai-news",
+    category: "AI",
   },
   {
     id: "AI 7",
@@ -63,6 +69,7 @@ export const posts = [
     date: "2025-05-31",
     imageUrl: "https://cdn.mos.cms.futurecdn.net/KiUoCBZ6swihvybMqsAfgQ-650-80.jpg.webp",
     url: "https://www.livescience.com/technology/artificial-intelligence/openais-smartest-ai-model-was-explicitly-told-to-shut-down-and-it-refused",
+    category: "AI",
   },
   {
     id: "AI 8",
@@ -72,6 +79,7 @@ export const posts = [
     date: "2025-05-31",
     imageUrl: "https://static.independent.co.uk/2022/09/06/11/06110640-2a98a9a4-70cf-4fb7-b03b-3ca4f0aa719a.jpg?quality=75&width=1368&crop=3%3A2%2Csmart&auto=webp",
     url: "https://www.independent.co.uk/news/health/prostate-cancer-ai-drug-test-abiraterone-b2760773.html",
+    category: "AI",
   },
   {
     id: "AI 9",
@@ -81,6 +89,7 @@ export const posts = [
     date: "2025-05-30",
     imageUrl: "https://www.reuters.com/resizer/v2/VEDDW67TLBL3VF2HLLKIMOCSSU.jpg?auth=71b2518e21e7011b6065e16dec68a9bc069316f2ef12ee34f60dcf754efd9ef4&width=640&quality=80",
     url: "https://www.reuters.com/world/china/chinese-tech-companies-prepare-ai-future-without-nvidia-ft-reports-2025-05-30/",
+    category: "AI",
   },
   {
     id: "AI 10",
@@ -90,6 +99,7 @@ export const posts = [
     date: "2025-05-30",
     imageUrl: "https://c.ndtvimg.com/2025-02/ni0dbf38_-artificial-intelligence_625x300_01_February_25.jpeg?im=FeatureCrop,algorithm=dnn,width=773,height=435",
     url: "https://www.ndtv.com/world-news/ai-could-wipe-50-of-entry-level-jobs-as-governments-hide-truth-anthropic-ceo-claims-8542485#google_vignette",
+    category: "AI",
   },
   {
     id: "AI 11",
@@ -99,6 +109,7 @@ export const posts = [
     date: "2025-05-30",
     imageUrl: "https://platform.theverge.com/wp-content/uploads/sites/2/2025/05/STK428_CRYPTO_D.jpg?quality=90&strip=all&crop=0%2C0%2C100%2C100&w=750",
     url: "https://www.theverge.com/climate-change/676528/ai-data-center-energy-forecast-bitcoin-mining",
+    category: "AI",
   },
   {
     id: "AI 12",
@@ -108,6 +119,7 @@ export const posts = [
     date: "2024-09-26",
     imageUrl: "https://www.globaltimes.cn/Portals/0/attachment/2024/2024-07-22/d9484f20-216e-4e32-b4b0-26e281977b32.jpeg",
     url: "https://www.globaltimes.cn/page/202409/1320435.shtml",
+    category: "AI",
   },
 
 ];
