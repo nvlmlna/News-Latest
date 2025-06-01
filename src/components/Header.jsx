@@ -1,10 +1,11 @@
-import { useState, useEffect } from "react";
-import { FaSearch, FaSun, FaMoon, FaFilter } from "react-icons/fa";
+import { useState, useEffect, useRef } from "react";
+import { FaSearch, FaSun, FaMoon, FaFilter, FaTimes } from "react-icons/fa";
 import { Menu } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import Profile from "./ProfileDropdown";
 import { useNavigate, useLocation, useSearchParams } from "react-router-dom";
 import { searchPosts, allposts } from "../data/index";
+import { input, span } from "framer-motion/client";
 
 export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -15,6 +16,7 @@ export default function Header() {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   const [searchResults, setSearchResults] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState("");
+  const inputRef = useRef(null);
 
   useEffect(() => {
     const handleResize = () => {
@@ -127,8 +129,9 @@ export default function Header() {
           </AnimatePresence>
 
           {/* Search Bar */}
-           <div className="flex items-center bg-gray-200 dark:bg-gray-700 rounded-full px-3 py-2 w-full md:w-96 max-w-xs mx-auto">
+           <div className="flex items-center bg-gray-200 dark:bg-gray-700 rounded-full px-3 py-2 w-full md:w-96 max-w-xs mx-auto z-50 relative">
                 <input
+                ref={inputRef}
                 type="text"
                 placeholder="Search"
                 className="bg-transparent ml-2 w-full outline-none text-gray-700 dark:text-white placeholder-gray-500 dark:placeholder-gray-300"
@@ -136,7 +139,30 @@ export default function Header() {
                 onChange={(e) => setQuery(e.target.value)}
                 onKeyDown={handleSearch}
                   />
-                  <FaSearch className="text-gray-500 dark:text-gray-300" />
+                  {isMobile && query ? (
+                    <FaTimes
+                    className="text-gray-500 dark:text-gray-300 ml-2 cursor-pointer"
+                    onClick={() => {
+                      setQuery("");
+                      setSearchResults([]);
+                    }}
+                    />
+                  ) : (
+                    <div className=" w-10 h-8 rounded-full bg-gray-500 flex items-center justify-center">
+                    <FaSearch 
+                    className="text-gray-200 dark:text-gray-700 cursor-pointer "
+                    onClick={()=> {
+                      if (!isMobile) {
+                        if (query.trim()) {
+                          navigate(`/News-W/Search?q=${encodeURIComponent(query)}`);
+                        } else {
+                        inputRef.current?.focus();
+                        }
+                      }
+                    }} /> 
+                    </div>
+                  )}
+                  
             </div>
 
             {isSearchPage && isMobile && (
