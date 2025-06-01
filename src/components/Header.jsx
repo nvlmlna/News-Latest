@@ -4,6 +4,7 @@ import { Menu } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import Profile from "./ProfileDropdown";
 import { useNavigate } from "react-router-dom";
+import allposts from "../data/index";
 
 export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -92,7 +93,6 @@ export default function Header() {
           {/* Search Bar */}
         <div className="flex-grow md:flex md:justify-center w-full md:w-auto">
            <div className="flex items-center bg-gray-200 dark:bg-gray-700 rounded-full px-3 py-2 w-full md:w-96 max-w-xs mx-auto">
-              <FaSearch className="text-gray-500 dark:text-gray-300" />
                 <input
                 type="text"
                 placeholder="Search"
@@ -101,6 +101,7 @@ export default function Header() {
                 onChange={(e) => setQuery(e.target.value)}
                 onKeyDown={handleSearch}
                   />
+                  <FaSearch className="text-gray-500 dark:text-gray-300" />
             </div>
           </div>
 

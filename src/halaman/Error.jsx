@@ -35,7 +35,7 @@ const Error = () => {
         404 NOT FOUND
       </h1>
       
-      <h2 className="text-xl font-semibold text-gray-600 mb-8">
+      <h2 className="text-xl font-semibold text-gray-500 mb-8">
         KLIK DIBAWAH INI UNTUK KEMBALI KE HALAMAN YANG BENAR!
       </h2>
 
@@ -77,7 +77,7 @@ const Error = () => {
 
       {/* Navigasi ke halaman lain */}
       <footer>
-        <div className="flex flex-wrap justify-center gap-6 bg-white dark:bg-gray-700 rounded-full px-9 py-4 shadow-lg mt-6">
+        <div className="flex flex-wrap justify-center gap-2 bg-white dark:bg-gray-700 rounded-full px-9 py-4 shadow-lg mt-6">
           <ul className="text-2xl font-bold text-gray-800 dark:text-gray-300">
             <li 
               className="hover:text-blue-800 cursor-pointer transition-all duration-300"
