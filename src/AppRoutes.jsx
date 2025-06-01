@@ -33,6 +33,7 @@ function AppRoutes() {
         <Route path="/News-W/Cybersecurity" element={<Cybersecurity />} />
         <Route path="/News-W/IOT" element={<IOT />} />
         <Route path="/News-W/error" element={<Error />} />
+        <Route path="*" element={<Error />} />
         <Route path="/News-W/EdTech" element={<EdTech />} />
         <Route path="/News-W/latest-news" element={<Latestnews />} />
         <Route path="/News-W/Trending" element={<Trending />} />

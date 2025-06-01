@@ -30,12 +30,12 @@ const Error = () => {
   };
 
   return (
-    <div className="bg-gray-300 min-h-screen flex flex-col items-center justify-center text-center px-4">
-      <h1 className="text-5xl font-bold tracking-wide text-gray-800 mb-6">
+    <div className="bg-gray-300 dark:bg-gray-800 min-h-screen flex flex-col items-center justify-center text-center px-4">
+      <h1 className="text-3xl font-bold tracking-wide text-gray-800 dark:text-gray-400 mb-4">
         404 NOT FOUND
       </h1>
       
-      <h2 className="text-2xl font-semibold text-gray-600 mb-8">
+      <h2 className="text-xl font-semibold text-gray-600 mb-8">
         KLIK DIBAWAH INI UNTUK KEMBALI KE HALAMAN YANG BENAR!
       </h2>
 
@@ -77,8 +77,8 @@ const Error = () => {
 
       {/* Navigasi ke halaman lain */}
       <footer>
-        <div className="flex flex-wrap justify-center gap-6 bg-white rounded-full px-9 py-4 shadow-lg mt-6">
-          <ul className="text-2xl font-bold text-gray-800">
+        <div className="flex flex-wrap justify-center gap-6 bg-white dark:bg-gray-700 rounded-full px-9 py-4 shadow-lg mt-6">
+          <ul className="text-2xl font-bold text-gray-800 dark:text-gray-300">
             <li 
               className="hover:text-blue-800 cursor-pointer transition-all duration-300"
               onClick={() => navigate("/News-W/")}
@@ -87,7 +87,7 @@ const Error = () => {
             </li>
           </ul>
 
-          <ul className="text-2xl font-bold text-gray-800">
+          <ul className="text-2xl font-bold text-gray-800 dark:text-gray-300">
             <li 
               className="hover:text-blue-800 cursor-pointer transition-all duration-300"
               onClick={() => navigate("/News-W/AI")}
@@ -96,7 +96,7 @@ const Error = () => {
             </li>
           </ul>
 
-          <ul className="text-2xl font-bold text-gray-800">
+          <ul className="text-2xl font-bold text-gray-800 dark:text-gray-300">
             <li 
               className="hover:text-blue-800 cursor-pointer transition-all duration-300"
               onClick={() => navigate("/News-W/Robotic")}
@@ -105,7 +105,7 @@ const Error = () => {
             </li>
           </ul>
 
-          <ul className="text-2xl font-bold text-gray-800">
+          <ul className="text-2xl font-bold text-gray-800 dark:text-gray-300">
             <li 
               className="hover:text-blue-800 cursor-pointer transition-all duration-300"
               onClick={() => navigate("/News-W/Cybersecurity")}
@@ -114,7 +114,7 @@ const Error = () => {
             </li>
           </ul>
 
-          <ul className="text-2xl font-bold text-gray-800">
+          <ul className="text-2xl font-bold text-gray-800 dark:text-gray-300">
             <li 
               className="hover:text-blue-800 cursor-pointer transition-all duration-300"
               onClick={() => navigate("/News-W/IOT")}
@@ -123,7 +123,7 @@ const Error = () => {
             </li>
           </ul>
 
-          <ul className="text-2xl font-bold text-gray-800">
+          <ul className="text-2xl font-bold text-gray-800 dark:text-gray-300">
             <li 
               className="hover:text-blue-800 cursor-pointer transition-all duration-300"
               onClick={() => navigate("/News-W/EdTech")}

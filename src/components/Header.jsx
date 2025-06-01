@@ -48,13 +48,23 @@ export default function Header() {
     }
   };
 
+  // Fungsi untuk navigasi saat teks "NEWS" diklik
+  const handleLogoClick = () => {
+    navigate("/News-W/"); // Arahkan ke halaman utama
+  };
+
   return (
     <header className="relative z-50 w-full bg-[#bdbdbd] dark:bg-[#1a1a1a] shadow-md px-3 sm:px-6 py-3 sm:py-4 transition-colors duration-300">
-      <div className="flex flex-wrap items-center justify-between gap-4 w-full bg-white dark:bg-gray-800 rounded-xl md:rounded-full px-4 md:px-9 py-4 transition-colors duration-300">
+      <div className="flex flex-wrap items-center justify-between gap-4 w-full bg-white dark:bg-gray-800 rounded-xl md:rounded-full px-4 md:px-9 py-4 transition-colors duration-300 ">
         
         {/* Logo + Toggle + Mobile Menu */}
         <div className="flex items-center justify-between w-full md:w-auto">
-          <h1 className="text-2x1 sm:text-3xl font-bold tracking-widest text-gray-400 dark:text-white whitespace-nowrap">NEWS</h1>
+          <button
+            onClick={handleLogoClick}
+            className="text-xl md:text-2xl lg:text-3xl font-bold tracking-widest text-gray-400 dark:text-white whitespace-nowrap focus:outline-none hover:text-gray-600 dark:hover:text-gray-300 transition-colors duration-200 max-w-[120px] px-2 py-1"
+          >
+            NEWS
+          </button>
           <div className="flex items-center gap-2 md:hidden">
             {/* Theme Toggle (Mobile) */}
             <label className="relative inline-block w-12 h-7">
