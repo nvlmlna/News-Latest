@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom";
+import { searchPosts, allposts } from "../data/index";
 
 const Error = () => {
   const navigate = useNavigate();
+  const categories = ["All", "AI", "Robotic", "Cybersecurity", "IOT", "EdTech"];
 
   // State untuk mini game
   const [guess, setGuess] = useState('');
@@ -77,60 +79,18 @@ const Error = () => {
 
       {/* Navigasi ke halaman lain */}
       <footer>
-        <div className="flex flex-wrap justify-center gap-2 bg-white dark:bg-gray-700 rounded-full px-9 py-4 shadow-lg mt-6">
-          <ul className="text-2xl font-bold text-gray-800 dark:text-gray-300">
-            <li 
-              className="hover:text-blue-800 cursor-pointer transition-all duration-300"
-              onClick={() => navigate("/News-W/")}
-            >
-              Home
-            </li>
-          </ul>
-
-          <ul className="text-2xl font-bold text-gray-800 dark:text-gray-300">
-            <li 
-              className="hover:text-blue-800 cursor-pointer transition-all duration-300"
-              onClick={() => navigate("/News-W/AI")}
-            >
-              AI
-            </li>
-          </ul>
-
-          <ul className="text-2xl font-bold text-gray-800 dark:text-gray-300">
-            <li 
-              className="hover:text-blue-800 cursor-pointer transition-all duration-300"
-              onClick={() => navigate("/News-W/Robotic")}
-            >
-              Robotic
-            </li>
-          </ul>
-
-          <ul className="text-2xl font-bold text-gray-800 dark:text-gray-300">
-            <li 
-              className="hover:text-blue-800 cursor-pointer transition-all duration-300"
-              onClick={() => navigate("/News-W/Cybersecurity")}
-            >
-              Cybersecurity
-            </li>
-          </ul>
-
-          <ul className="text-2xl font-bold text-gray-800 dark:text-gray-300">
-            <li 
-              className="hover:text-blue-800 cursor-pointer transition-all duration-300"
-              onClick={() => navigate("/News-W/IOT")}
-            >
-              IOT
-            </li>
-          </ul>
-
-          <ul className="text-2xl font-bold text-gray-800 dark:text-gray-300">
-            <li 
-              className="hover:text-blue-800 cursor-pointer transition-all duration-300"
-              onClick={() => navigate("/News-W/EdTech")}
-            >
-              EdTech
-            </li>
-          </ul>
+        <div className="">
+        <div className="flex flex-wrap gap-2 justify-center">
+              {categories.slice(1).map((cat) => (
+                <button
+                  key={cat}
+                  className="text-base px-4 py-2 bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-gray-300 rounded-full hover:bg-blue-600"
+                  onClick={() => window.location.href = `/News-W/${cat}`}
+                >
+                  {cat}
+                </button>
+              ))}
+            </div>
         </div>
       </footer>
     </div>

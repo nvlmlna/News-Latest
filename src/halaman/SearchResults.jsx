@@ -67,10 +67,11 @@ const SearchResults = () => {
             <p className="text-gray-800 dark:text-gray-400 mb-4">Tidak ada hasil ditemukan untuk "{query}".</p>
             <p className="text-gray-800 dark:text-gray-400 mb-4">Coba kata kunci lain atau jelajahi kategori berikut:</p>
             <div className="flex flex-wrap gap-2 justify-center">
+              
               {categories.slice(1).map((cat) => (
                 <button
                   key={cat}
-                  className="px-4 py-2 bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-gray-300 rounded-full hover:bg-blue-600"
+                  className="text-base px-4 py-2 bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-gray-300 rounded-full hover:bg-blue-600"
                   onClick={() => window.location.href = `/News-W/${cat}`}
                 >
                   {cat}

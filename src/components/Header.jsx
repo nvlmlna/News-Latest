@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Profile from "./ProfileDropdown";
 import { useNavigate, useLocation, useSearchParams } from "react-router-dom";
 import { searchPosts, allposts } from "../data/index";
-import { input, span } from "framer-motion/client";
+import { div, input, span } from "framer-motion/client";
 
 export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -17,6 +17,11 @@ export default function Header() {
   const [searchResults, setSearchResults] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState("");
   const inputRef = useRef(null);
+  const dropdownRef = useRef(null)
+  const [isInputFocused, setIsInputFocused] = useState(false);
+  const [isFilterOpen, setIsFilterOpen] = useState(false)
+  const location = useLocation(); //
+
 
   useEffect(() => {
     const handleResize = () => {
@@ -61,11 +66,55 @@ export default function Header() {
 
   const handleSearch = (e) => {
     if (e.key === "Enter" && query.trim()) {
+      inputRef.current?.blur(); 
       navigate(`/News-W/Search?q=${encodeURIComponent(query)}`);
       setSearchResults([]);
       setQuery("");
     }
   };
+  
+// For nav menu (isNavOpen)
+useEffect(() => {
+  const handleClickOutside = (event) => {
+    if (
+      dropdownRef.current &&
+      event.target instanceof Node &&
+      !dropdownRef.current.contains(event.target)
+    ) {
+      setIsNavOpen(false);
+    }
+  };
+
+  if (isNavOpen) {
+    document.addEventListener("mousedown", handleClickOutside);
+  }
+
+  return () => {
+    document.removeEventListener("mousedown", handleClickOutside);
+  };
+}, [isNavOpen]);
+
+// For filter dropdown (isFilterOpen)
+useEffect(() => {
+  const handleClickOutside = (event) => {
+    if (
+      dropdownRef.current &&
+      event.target instanceof Node &&
+      !dropdownRef.current.contains(event.target)
+    ) {
+      setIsFilterOpen(false);
+    }
+  };
+
+  if (isFilterOpen) {
+    document.addEventListener("mousedown", handleClickOutside);
+  }
+
+  return () => {
+    document.removeEventListener("mousedown", handleClickOutside);
+  };
+}, [isFilterOpen]);
+
 
   // Fungsi untuk navigasi saat teks "NEWS" diklik
   const handleLogoClick = () => {
@@ -73,6 +122,7 @@ export default function Header() {
   };
 
   const isSearchPage = location.pathname === "/News-W/Search";
+  const categories = ["All", "AI", "Robotic", "Cybersecurity", "IOT", "EdTech"];
 
   return (
     <header className="relative z-50 w-full bg-[#bdbdbd] dark:bg-[#1a1a1a] shadow-md px-3 sm:px-6 py-3 sm:py-4 transition-colors duration-300">
@@ -113,7 +163,7 @@ export default function Header() {
           
         <div className="relative flex justify-center w-full md:w-auto z-50">
           <AnimatePresence>
-            {query.trim() && (
+            {(query.trim() || isInputFocused ) && (
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -123,20 +173,26 @@ export default function Header() {
                 onClick={() => {
                   setQuery("");
                   setSearchResults([]);
+                  setIsInputFocused(false);
                 }}
               />
             )}
           </AnimatePresence>
 
+
+
+        <div className="w-full max-w-xs md:max-w-md mx-auto z-50 ">
           {/* Search Bar */}
-           <div className="flex items-center bg-gray-200 dark:bg-gray-700 rounded-full px-3 py-2 w-full md:w-96 max-w-xs mx-auto z-50 relative">
+          <div className="flex items-center bg-gray-200 dark:bg-gray-700 rounded-full px-3 py-2 w-full md:w-96 max-w-xs mx-auto z-50 relative">
                 <input
                 ref={inputRef}
                 type="text"
                 placeholder="Search"
-                className="bg-transparent ml-2 w-full outline-none text-gray-700 dark:text-white placeholder-gray-500 dark:placeholder-gray-300"
+                className="ml-2 bg-transparent w-full outline-none text-gray-700 dark:text-white placeholder-gray-500 dark:placeholder-gray-300"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
+                onFocus={() => setIsInputFocused(true)}
+                onBlur={() => setTimeout(() => setIsInputFocused(false), 200)}
                 onKeyDown={handleSearch}
                   />
                   {isMobile && query ? (
@@ -148,33 +204,66 @@ export default function Header() {
                     }}
                     />
                   ) : (
-                    <div className=" w-10 h-8 rounded-full bg-gray-500 flex items-center justify-center">
+                    <div className=" ">
                     <FaSearch 
-                    className="text-gray-200 dark:text-gray-700 cursor-pointer "
-                    onClick={()=> {
+                    className="md:mr-2 mr-0 text-gray-500 dark:text-gray-300 cursor-pointer "
+                    onMouseDown={()=> {
                       if (!isMobile) {
                         if (query.trim()) {
                           navigate(`/News-W/Search?q=${encodeURIComponent(query)}`);
+                          inputRef.current?.blur();
+                          setIsInputFocused(false);
                         } else {
                         inputRef.current?.focus();
                         }
                       }
-                    }} /> 
+                    }} />
+                    
                     </div>
-                  )}
-                  
-            </div>
+                  )} {isSearchPage && isMobile && (
+  <div className="relative" ref={dropdownRef}>
+    <button
+      onClick={() => setIsFilterOpen(!isFilterOpen)}
+      className="text-gray-500 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600 p-2 rounded-full"
+    >
+      <FaFilter className="text-lg" />
+    </button>
 
-            {isSearchPage && isMobile && (
-              <button
-                onClick={() => setIsFilterOpen(!isFilterOpen)}
-                className="p-2 bg-gray-200 dark:bg-gray-700 rounded-full text-gray-500 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600"
-              >
-                <FaFilter className="text-lg" />
-                
-              </button>
-            )}
-          
+    {/* Dropdown mobile filter */}
+    <AnimatePresence>
+      {isFilterOpen && (
+        <motion.div
+          initial={{ opacity: 0, y: -5 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -5 }}
+          transition={{ duration: 0.2 }}
+          className="absolute right-0 mt-2 w-40 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg shadow-lg z-50"
+        >
+          <ul className="py-2 text-sm text-gray-700 dark:text-white">
+            {categories.map((cat) => (
+              <li key={cat}>
+                <button
+                  className={`block w-full text-left px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 ${
+                    selectedCategory === (cat === "All" ? "" : cat) ? "font-bold" : ""
+                  }`}
+                  onClick={() => {
+                    setSelectedCategory(cat === "All" ? "" : cat);
+                    setIsFilterOpen(false);
+                  }}
+                >
+                  {cat}
+                </button>
+              </li>
+            ))}
+          </ul>
+        </motion.div>
+      )}
+    </AnimatePresence>
+  </div>
+)}
+
+          </div>
+        </div>
 
           {/* Dropdown Hasil Pencarian */}
           <AnimatePresence>
@@ -242,6 +331,7 @@ export default function Header() {
       <AnimatePresence>
         {isNavOpen && (
           <motion.div
+            ref={dropdownRef}
             initial={{ opacity: 0, y: -10, scale: 0.95 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: -10, scale: 0.95 }}
