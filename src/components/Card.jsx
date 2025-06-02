@@ -11,7 +11,7 @@ const Card = ({post}) => {
         />
         <h2 className="text-xl font-bold text-gray-800 dark:text-white">{post.title}</h2>
         <p className="text-base text-gray-500 dark:text-gray-300 mb-1 mt-1">{post.date}</p>
-        <p className="text-sm text-gray-600 dark:text-gray-200">{post.excerpt}</p>
+        <p className="text-sm text-gray-600 dark:text-gray-200">{post.excerpt.slice(0, 130)}...</p>
 
         <Link to={post.url}>
         <p className="text-base hover:underline mt-2 ">Read More</p>

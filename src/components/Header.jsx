@@ -188,7 +188,7 @@ useEffect(() => {
                 ref={inputRef}
                 type="text"
                 placeholder="Search"
-                className="ml-2 bg-transparent w-full outline-none text-gray-700 dark:text-white placeholder-gray-500 dark:placeholder-gray-300"
+                className="ml-2 bg-transparent w-full p-2 outline-none text-gray-700 dark:text-white placeholder-gray-500 dark:placeholder-gray-300"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 onFocus={() => setIsInputFocused(true)}
@@ -206,7 +206,7 @@ useEffect(() => {
                   ) : (
                     <div className=" ">
                     <FaSearch 
-                    className="md:mr-2 mr-0 text-gray-500 dark:text-gray-300 cursor-pointer "
+                    className="md:mr-2 mr-0 text-gray-500 dark:text-white cursor-pointer "
                     onMouseDown={()=> {
                       if (!isMobile) {
                         if (query.trim()) {
@@ -221,46 +221,46 @@ useEffect(() => {
                     
                     </div>
                   )} {isSearchPage && isMobile && (
-  <div className="relative" ref={dropdownRef}>
-    <button
-      onClick={() => setIsFilterOpen(!isFilterOpen)}
-      className="text-gray-500 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600 p-2 rounded-full"
-    >
-      <FaFilter className="text-lg" />
-    </button>
-
-    {/* Dropdown mobile filter */}
-    <AnimatePresence>
-      {isFilterOpen && (
-        <motion.div
-          initial={{ opacity: 0, y: -5 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -5 }}
-          transition={{ duration: 0.2 }}
-          className="absolute right-0 mt-2 w-40 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg shadow-lg z-50"
-        >
-          <ul className="py-2 text-sm text-gray-700 dark:text-white">
-            {categories.map((cat) => (
-              <li key={cat}>
+              <div className="relative" ref={dropdownRef}>
                 <button
-                  className={`block w-full text-left px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 ${
-                    selectedCategory === (cat === "All" ? "" : cat) ? "font-bold" : ""
-                  }`}
-                  onClick={() => {
-                    setSelectedCategory(cat === "All" ? "" : cat);
-                    setIsFilterOpen(false);
-                  }}
+                  onClick={() => setIsFilterOpen(!isFilterOpen)}
+                  className="text-gray-500 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600  rounded-full"
                 >
-                  {cat}
+                  <FaFilter className="text-lg" />
                 </button>
-              </li>
-            ))}
-          </ul>
-        </motion.div>
-      )}
-    </AnimatePresence>
-  </div>
-)}
+
+           {/* Dropdown mobile filter */}
+           <AnimatePresence>
+             {isFilterOpen && (
+               <motion.div
+                 initial={{ opacity: 0, y: -5 }}
+                 animate={{ opacity: 1, y: 0 }}
+                 exit={{ opacity: 0, y: -5 }}
+                 transition={{ duration: 0.2 }}
+                 className="absolute top-full right-0 mt-2 w-40 bg-white/60 dark:bg-gray-900/80 backdrop-blur-md rounded-lg shadow-xl z-50 font-bold"
+               >
+                 <ul className="py-2 text-sm text-gray-700 dark:text-white">
+                   {categories.map((cat) => (
+                     <li key={cat}>
+                       <button
+                         className={`block w-full text-left px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 ${
+                           selectedCategory === (cat === "All" ? "" : cat) ? "font-bold" : ""
+                         }`}
+                         onClick={() => {
+                           setSelectedCategory(cat === "All" ? "" : cat);
+                           setIsFilterOpen(false);
+                         }}
+                       >
+                         {cat}
+                       </button>
+                     </li>
+                   ))}
+                 </ul>
+               </motion.div>
+             )}
+           </AnimatePresence>
+         </div>
+       )}
 
           </div>
         </div>

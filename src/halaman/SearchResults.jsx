@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useLocation, useSearchParams } from "react-router-dom";
 import { searchPosts, allposts } from "../data/index";
+import { Link } from "react-router-dom";
 
 const SearchResults = () => {
   const location = useLocation();
@@ -22,7 +23,7 @@ const SearchResults = () => {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col sm:flex-row items-center justify-between mb-6">
         
-          <h1 className="text-2xl font-bold text-gray-800 dark:text-white">
+          <h1 className="text-2xl mt-8 font-bold text-gray-800 dark:text-white">
             Hasil Pencarian untuk "{query}"
           </h1>
          <div className="w-full md:w-auto mb-4 md:mb-0">
@@ -30,7 +31,7 @@ const SearchResults = () => {
             value={selectedCategory}
             onChange={(e) => setSelectedCategory(e.target.value)}
             aria-label="Filter by category"
-            className="w-full hidden md:block md:w-auto bg-gray-200 dark:bg-gray-700 rounded-full px-4 py-2 text-sm text-gray-700 dark:text-white focus:outline-none"
+            className="w-full hidden md:block md:w-auto bg-gray-200 dark:bg-gray-700 rounded-full px-4 py-2  text-sm text-gray-700 dark:text-white focus:outline-none"
           >
             {categories.map((cat) => (
               <option key={cat} value={cat === "All" ? "" : cat}>
@@ -43,7 +44,7 @@ const SearchResults = () => {
         </div>
 
         {results.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-2">
             {results.map((post) => (
               <div
                 key={post.id}
@@ -53,12 +54,12 @@ const SearchResults = () => {
                <img 
                 src={post.imageUrl}
                 alt={post.title} 
-                className="w-full h-48 object-cover object-center rounded-xl mb-4" 
+                className="w-full h-68 object-cover object-center rounded-xl mb-4" 
                 />
-                <span className="text-xs text-blue-500">{post.category}</span>
-                <h2 className="text-lg font-semibold text-gray-800 dark:text-white">{post.title}</h2>
-                <p className="text-sm text-gray-600 dark:text-gray-300">{post.excerpt.slice(0, 100)}...</p>
-                
+                <span className="text-base md:text-sm font-bold text-blue-500">{post.category}</span>
+                <h2 className="text-xl font-bold mt-1 text-gray-800 dark:text-white">{post.title}</h2>
+                <p className="text-base text-gray-500 dark:text-gray-300 mb-1 mt-1">{post.date}</p>
+                <p className="text-base text-gray-700 dark:text-gray-200">{post.excerpt.slice(0, 130)}...</p>
               </div>
             ))}
           </div>
