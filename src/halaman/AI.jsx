@@ -1,5 +1,5 @@
 import React from "react";
-import { posts } from "../data/posts-AI";
+import { posts } from "../data/posts-AI.jsx";
 import Card from "../components/Card";
 
 const AI = () => {

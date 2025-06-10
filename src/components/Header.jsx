@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { FaSearch, FaSun, FaMoon, FaFilter, FaTimes } from "react-icons/fa";
-import { Menu } from "lucide-react";
+import { Link, Menu } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import Profile from "./ProfileDropdown";
 import { useNavigate, useLocation, useSearchParams } from "react-router-dom";
@@ -183,7 +183,7 @@ useEffect(() => {
 
         <div className="w-full max-w-xs md:max-w-md mx-auto z-50 ">
           {/* Search Bar */}
-          <div className="flex items-center bg-gray-200 dark:bg-gray-700 rounded-full px-3 py-2 w-full md:w-96 max-w-xs mx-auto z-50 relative">
+          <div className="flex items-center bg-gray-300 dark:bg-gray-700 rounded-full px-3 py-2 w-full md:w-96 max-w-xs mx-auto z-50 relative">
                 <input
                 ref={inputRef}
                 type="text"
@@ -339,13 +339,17 @@ useEffect(() => {
             className={`absolute top-full ${isMobile ? "right-4" : "right-6"} mt-2 w-48 md:w-56 bg-white/60 dark:bg-gray-900/80 backdrop-blur-md rounded-lg shadow-xl z-50 font-bold`}
           >
             <ul className="flex flex-col gap-3 p-4 md:p-6 text-black dark:text-white text-base md:text-lg">
-              {["Home", "AI", "Robotic", "Cybersecurity", "IOT", "EdTech"].map((item) => (
+              {["Home", "AI", "Robotic", "Cybersecurity", "IOT", "EdTech", "Astronomy"].map((item) => (
                 <li
                   key={item}
                   className="hover:text-blue-800 dark:hover:text-blue-300 cursor-pointer py-1"
                   onClick={() => {
-                    navigate(`/News-W/${item === "Home" ? "" : item}`);
+                    if (item === "Astronomy") {
+                      window.location.href = "https://www.astronomy.com/";
+                    } else {
+                      navigate(`/News-W/${item === "Home" ? "" : item}`);
                     setIsNavOpen(false);
+                    }
                   }}
                 >
                   {item}

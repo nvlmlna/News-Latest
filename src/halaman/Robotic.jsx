@@ -1,5 +1,5 @@
 import React from 'react';
-import { posts } from "../data/posts-Robotic";
+import { posts } from "../data/posts-Robotic.jsx";
 import Card from "../components/Card";
 
 const Robotic = () => {
@@ -11,7 +11,7 @@ const Robotic = () => {
 
       <div className="flex items-center justify-center flex-1">
         {posts && posts.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6 w-full text-lg">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6 w-full text-lg ">
             {posts.map((post) => (
               <Card key={post.id} post={post} />
             ))}

@@ -1,5 +1,5 @@
 import React from 'react'
-import { posts } from "../data/posts-Cybersecurity";
+import { posts } from "../data/posts-Cybersecurity.jsx";
 import Card from "../components/Card"; 
 
 const Cybersecurity = () => {

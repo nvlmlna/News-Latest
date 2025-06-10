@@ -12,6 +12,8 @@ import EdTech from "./halaman/EdTech";
 import Latestnews from "./halaman/Latestnews";
 import Trending from "./halaman/Trending";
 import SearchResults from "./halaman/SearchResults";
+import NewsDetails from "./halaman/NewsDetails";
+
 
 function AppRoutes() {
   return (
@@ -36,6 +38,7 @@ function AppRoutes() {
         <Route path="/News-W/error" element={<Error />} />
         <Route path="/News-W/Search" element={<SearchResults />} />
         <Route path="*" element={<Error />} />
+        <Route path="/News-W/:id" element={<NewsDetails />} />
         <Route path="/News-W/EdTech" element={<EdTech />} />
         <Route path="/News-W/latest-news" element={<Latestnews />} />
         <Route path="/News-W/Trending" element={<Trending />} />

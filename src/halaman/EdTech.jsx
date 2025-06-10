@@ -1,5 +1,5 @@
 import React from 'react';
-import { posts } from "../data/posts-EdTech";
+import { posts } from "../data/posts-EdTech.jsx";
 import Card from "../components/Card";
 
 const EdTech = () => {

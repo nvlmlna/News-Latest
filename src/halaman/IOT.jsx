@@ -1,5 +1,5 @@
 import React from 'react';
-import { posts } from "../data/posts-IOT";
+import { posts } from "../data/posts-IOT.jsx";
 import Card from "../components/Card";
 
 const IOT = () => {

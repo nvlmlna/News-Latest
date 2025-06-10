@@ -1,12 +1,11 @@
-import { posts as aiposts } from "../data/posts-AI";
-import { posts as cybersecurityposts } from "../data/posts-Cybersecurity";
-import { posts as edtechposts } from "../data/posts-EdTech";
-import { posts as iotposts } from "../data/posts-IOT";
-import { posts as latestnewsposts } from "../data/posts-LatestNews";
-import { posts as roboticposts} from "../data/posts-Robotic";
-import { posts as trendingposts} from "../data/posts-Trending";
+import { posts as aiposts } from "../data/posts-AI.jsx";
+import { posts as cybersecurityposts } from "../data/posts-Cybersecurity.jsx";
+import { posts as edtechposts } from "../data/posts-EdTech.jsx";
+import { posts as iotposts } from "../data/posts-IOT.jsx";
+import { posts as roboticposts} from "../data/posts-Robotic.jsx";
 
-const allposts = [...cybersecurityposts, ...aiposts, ...edtechposts, ...iotposts, ...latestnewsposts, ...roboticposts, ...trendingposts];
+
+const allposts = [...cybersecurityposts, ...aiposts, ...edtechposts, ...iotposts, ...roboticposts];
 
 // Fungsi pencarian: Cocokkan query dengan title, excerpt, dan content
 export const searchPosts = (query, selectedCategory) => {

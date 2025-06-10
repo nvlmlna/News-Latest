@@ -48,13 +48,13 @@ const SearchResults = () => {
             {results.map((post) => (
               <div
                 key={post.id}
-                className="bg-white dark:bg-gray-700 p-6 rounded-2xl shadow-md"
-                onClick={() => window.open(post.url, "_blank")} // Buka URL eksternal
+                className="bg-white dark:bg-gray-700 p-6 rounded-2xl shadow-md hover:scale-105 hover:shadow-lg transition"
+                onClick={() => (window.location.href = `/News-W/${post.id}`)} // Buka URL eksternal
               >
                <img 
                 src={post.imageUrl}
                 alt={post.title} 
-                className="w-full h-68 object-cover object-center rounded-xl mb-4" 
+                className="w-full h-80 object-cover object-center rounded-xl mb-4" 
                 />
                 <span className="text-base md:text-sm font-bold text-blue-500">{post.category}</span>
                 <h2 className="text-xl font-bold mt-1 text-gray-800 dark:text-white">{post.title}</h2>
