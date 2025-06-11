@@ -1,7 +1,7 @@
 import paths from "../assets/paths-niki.png";
 export const posts = [
   {
-    id: "Robotic 1",
+    id: "Robotic-1",
     title: "Pudu Robotics Launches its Latest AI-Powered Autonomous Cleaning Robot – PUDU CC1 Pro",
     excerpt: "PUDU CC1 Pro elevates cleaning to a fully autonomous, closed-loop system. Equipped with advanced AI, it can detect liquid stains, recognize floor cleanliness and surface types, adjust cleaning intensity, verify cleaning results, and even monitor the status of its own components.",
     content: `
@@ -17,7 +17,7 @@ export const posts = [
     category: "Robotic",
   },
   {
-    id: "Robotic 2",
+    id: "Robotic-2",
     title: "Memory for machines: Manifold Tech’s Odin 1 brings spatial recall to robotics",
     excerpt: "Founded in 2022, Manifold develops 3D perception and reconstruction algorithms for robots and drones, allowing them to sense spatial environments, retain environmental memory, and interact with their surroundings in real time. The company’s founding team comes from the Mechatronics and Robotic Systems (MaRS) Lab at the University of Hong Kong, which focuses on drone design, navigation, control, and SLAM (simultaneous localization and mapping) using LiDAR (light detection and ranging).",
     content: `
@@ -34,7 +34,7 @@ export const posts = [
     category: "Robotic",
   },
   {
-    id: "Robotic 3",
+    id: "Robotic-3",
     title: "Cumbrian college students showcase robotic solutions at RAICo1",
     excerpt: "Young engineers from three Cumbrian colleges have showcased their creativity and technical skills in a hands-on robotics challenge. Students aged 16 to 18 presented their Robotics Sprint schools challenge creations at an event held at the RAICo1 Robotics and AI Collaboration facility in Whitehaven.",
     content: `
@@ -52,7 +52,7 @@ export const posts = [
     category: "Robotic",
   },
   {
-    id: "Robotic 4",
+    id: "Robotic-4",
     title: "VeBrain: A Unified Multimodal AI Framework for Visual Reasoning and Real-World Robotic Control",
     excerpt: "Multimodal Large Language Models (MLLMs) hold promise for enabling machines, such as robotic arms and legged robots, to perceive their surroundings, interpret scenarios, and take meaningful actions. The integration of such intelligence into physical systems is advancing the field of robotics, pushing it toward autonomous machines that don’t just see and describe but also plan and move within their environments based on contextual understanding.",
     content: `Multimodal Large Language Models (MLLMs) hold promise for enabling machines, such as robotic arms and legged robots, to perceive their surroundings, interpret scenarios, and take meaningful actions. The integration of such intelligence into physical systems is advancing the field of robotics, pushing it toward autonomous machines that don’t just see and describe but also plan and move within their environments based on contextual understanding.\n
@@ -67,7 +67,7 @@ export const posts = [
     category: "Robotic",
   },
   {
-    id: "Robotic 5",
+    id: "Robotic-5",
     title: "icetana AI signs $3.6m SoftBank Robotics deal to distribute video analytics technology across Asia-Pacific",
     excerpt: "icetana AI (ASX: ICE) has signed a $3.6 million partnership with Singapore-based SoftBank Robotics to establish a platform for commercial growth, product innovation and regional expansion across the Asia-Pacific.",
     content: `
@@ -85,7 +85,7 @@ export const posts = [
     category: "Robotic",
   },
   {
-    id: "Robotic 6",
+    id: "Robotic-6",
     title: "Taiwan’s Abico Group to invest NT$300 million in Agility Robotics",
     excerpt: "Agility Robotics is known for creating Digit, the world’s first bipedal robot designed for real-world warehouse and factory work, per CNA. The company has already deployed Digit with partners including Amazon and GXO Logistics, making it an early mover in the robotics market, per Anue.",
     content: `
@@ -103,7 +103,7 @@ export const posts = [
     category: "Robotic",
   },
   {
-    id: "Robotic 7",
+    id: "Robotic-7",
     title: "Robotic Turbine Blade Repair Technologies Market 2025: AI-Driven Automation to Accelerate 12% CAGR Growth Through 2030",
     excerpt: "Robotic turbine blade repair technologies represent a rapidly advancing segment within the broader industrial automation and power generation maintenance markets. These technologies leverage robotics, advanced sensors, and AI-driven systems to automate the inspection, refurbishment, and repair of turbine blades used in gas and steam turbines. ",
     content: `
@@ -121,7 +121,7 @@ export const posts = [
     category: "Robotic",
   },
   {
-    id: "Robotic 8",
+    id: "Robotic-8",
     title: "New robotic technology at the University of Iowa helping patients, doctors",
     excerpt: "The University of Iowa Health Care added three robots with the latest technology to its lineup for minimally invasive surgeries. The da Vinci 5 robots display three-dimensional imagery and are the first of their kind in Iowa. ",
     content: `
@@ -139,7 +139,7 @@ export const posts = [
     category: "Robotic",
   },
   {
-    id: "Robotic 9",
+    id: "Robotic-9",
     title: "Smart adaptation: The fusion of AI and robotics for dynamic environments",
     excerpt: "The field of robotics has made remarkable strides over the past few decades, yet it continues to face challenges that hinder the full utilization of its potential. Traditional robots often rely on pre-programmed instructions and restricted configurations, limiting their ability to respond to unforeseen",
     content: `
@@ -157,7 +157,7 @@ export const posts = [
     category: "Robotic",
   },
   {
-    id: "Robotic 10",
+    id: "Robotic-10",
     title: "Top Robotics Stocks To Consider - June 9th",
     excerpt: "NVIDIA, Teradyne, Serve Robotics, TechnipFMC, and Zebra Technologies are the five Robotics stocks to watch today, according to MarketBeat's stock screener tool. Robotics stocks are shares of publicly traded companies that design, develop or manufacture robotic systems and automation technologies for industries such as manufacturing, healthcare, logistics and consumer products. By investing in these equities, market participants gain exposure to the growth potential—and associated risks—of automation-driven innovation, with performance often tied to technological advances, adoption rates and broader economic cycles. These companies had the highest dollar trading volume of any Robotics stocks within the last several days.",
     content: `
@@ -175,7 +175,7 @@ export const posts = [
     category: "Robotic",
   },
   {
-    id: "Robotic 11",
+    id: "Robotic-11",
     title: "Robotic hand with unprecedented tactile sensitivity achieves human-like dexterity in real-world tasks",
     excerpt: "Researchers have unveiled a robotic hand, the F-TAC Hand, which integrates high-resolution tactile sensing across an unprecedented 70% of its surface area, allowing for human-like adaptive grasping. This pioneering development, published in Nature Machine Intelligence today, represents a significant leap forward in robotic intelligence and its ability to interact with dynamic real-world environments.",
     content: `
@@ -193,7 +193,7 @@ export const posts = [
     category: "Robotic",
   },
   {
-    id: "Robotic 12",
+    id: "Robotic-12",
     title: "From Dubai to the NYSE: Interview with Micropolis Robotics CEO",
     excerpt: "Under the guidance of founder and CEO Fareed Aljawhari, the company is moving decisively from high-impact pilot programs with partners like the Dubai Police and The Sustainable City to full-scale commercialization, with a clear roadmap for growth and profitability.",
     content: `

@@ -2,7 +2,7 @@ import paths from "../assets/paths-niki.png";
 export const posts = [
  
   {
-    id: "AI 1",
+    id: "AI-1",
     title: "AI-enabled control system helps autonomous drones stay on target in uncertain environments",
     excerpt: "An autonomous drone carrying water to help extinguish a wildfire in the Sierra Nevada might encounter swirling Santa Ana winds that threaten to push it off course. Rapidly adapting to these unknown disturbances inflight presents an enormous challenge for the drone’s flight control system.",
     content: `An autonomous drone carrying water to help extinguish a wildfire in the Sierra Nevada might encounter swirling Santa Ana winds that threaten to push it off course. Rapidly adapting to these unknown disturbances inflight presents an enormous challenge for the drone’s flight control system. \n
@@ -22,7 +22,7 @@ export const posts = [
 
   },
   {
-    id: "AI 2",
+    id: "AI-2",
     title: "Porsche Introduces AI System to Predict Vehicle Faults",
     excerpt: "New AI technology aims to save motorists on repair bills by detecting issues early.",
     content: `
@@ -45,7 +45,7 @@ export const posts = [
     
   },
    {
-    id: "AI 3",
+    id: "AI-3",
     title: "Google's Veo 3 AI video generator is unlike anything you've ever seen. The world isn't ready.",
     excerpt: "We're so cooked.",
     content: `
@@ -64,7 +64,7 @@ export const posts = [
     
   },
   {
-    id: "AI 4",
+    id: "AI-4",
     title: "Anthropic CEO Warns AI Could Eliminate 50% of Entry-Level White-Collar Jobs",
     excerpt: "Dario Amodei highlights AI's potential to significantly disrupt the job market.",
     content: `
@@ -83,7 +83,7 @@ export const posts = [
     
   },
   {
-    id: "AI 5",
+    id: "AI-5",
     title: "Nvidia CEO Jensen Huang issues urgent AI warning: You’re going to lose your job to someone who...",
     excerpt: "Nvidia CEO Jensen Huang warns that workers must embrace AI",
     content: `
@@ -102,7 +102,7 @@ export const posts = [
     
   },
   {
-    id: "AI 6",
+    id: "AI-6",
     title: "You Can Now Turn Text Prompts Into Lego Designs With LegoGPT AI",
     excerpt: "Researchers at Carnegie Mellon University have developed LEGO-GPT, an AI model.",
     content: `
@@ -121,7 +121,7 @@ export const posts = [
     
   },
   {
-    id: "AI 7",
+    id: "AI-7",
     title: "OpenAI's 'smartest' AI model was explicitly told to shut down — and it refused",
     excerpt: "An artificial intelligence safety firm has found that OpenAI's o3 and o4-mini models sometimes refuse to shut down, and will sabotage computer scripts in order to keep working on tasks.",
     content: `
@@ -140,7 +140,7 @@ export const posts = [
     
   },
   {
-    id: "AI 8",
+    id: "AI-8",
     title: "AI to help more patients get prostate cancer drug that cuts risk of death",
     excerpt: "AI could eliminate the 'postcode lottery' surrounding a life-extending treatment for advanced prostate cancer, researchers have said.",
     content: `
@@ -159,7 +159,7 @@ export const posts = [
     
   },
   {
-    id: "AI 9",
+    id: "AI-9",
     title: "Chinese tech companies prepare for AI future without Nvidia, FT reports",
     excerpt: "China's biggest technology companies have begun the process of switching to homegrown chips as they contend with a dwindling stockpile of Nvidia, opens new tab processors and tightening United States export controls, the Financial Times reported on Thursday.",
     content: `
@@ -178,7 +178,7 @@ export const posts = [
     
   },
   {
-    id: "AI 10",
+    id: "AI-10",
     title: "AI Could Wipe 50% Of Entry-Level Jobs As Governments Hide Truth, Anthropic CEO Claims",
     excerpt: "According to the Anthropic boss, unemployment could increase by 10 per cent to 20 per cent over the next five years due to AI use.",
     content: `
@@ -197,7 +197,7 @@ export const posts = [
     
   },
   {
-    id: "AI 11",
+    id: "AI-11",
     title: "AI could consume more power than Bitcoin by the end of 2025",
     excerpt: "AI could soon surpass Bitcoin mining in energy consumption, according to a new analysis that concludes artificial intelligence could use close to half of all the electricity consumed by data centers globally by the end of 2025.",
     content: `
@@ -216,7 +216,7 @@ export const posts = [
     
   },
   {
-    id: "AI 12",
+    id: "AI-12",
     title: "China accelerates big data, AI application in ocean industry, anticipating revolutionary changes",
     excerpt: "China is making significant strides in utilizing big data and artificial intelligence (AI) in the ocean industry.",
     content: "AI application in ocean industry.",

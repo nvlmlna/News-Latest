@@ -1,7 +1,7 @@
 import paths from "../assets/paths-niki.png";
 export const posts = [
   {
-    id: "Cybersecurity 1",
+    id: "Cybersecurity-1",
     title: "Ransomware 2.0 How AI-Powered Attacks Are Evolving",
     excerpt: "Ransomware attacks have entered a new era of sophistication and danger, with AI-powered ransomware attacks marking a significant evolution beyond encrypting payment files.",
     content:  `
@@ -23,7 +23,7 @@ export const posts = [
     category: "Cybersecurity",
   },
   {
-    id: "Cybersecurity 2",
+    id: "Cybersecurity-2",
     title: "Zero Trust Architecture Building Resilient Defenses for 2025",
     excerpt: "In an era where cyber threats continuously evolve and traditional security perimeters become obsolete, Zero Trust Architecture for 2025 has emerged as the cornerstone of modern cybersecurity strategies.",
     content:  `
@@ -42,7 +42,7 @@ export const posts = [
     category: "Cybersecurity",
   },
   {
-    id: "Cybersecurity 3",
+    id: "Cybersecurity-3",
     title: "Network Intrusion Detection for Emerging 2025 Cyber Threats",
     excerpt: "As we navigate through 2025, cybersecurity professionals face an increasingly sophisticated threat landscape. Network Intrusion Detection Systems (IDS) have become essential guardians against evolving digital threats that target organizations worldwide.",
     content:  `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis, ipsum at gravida bibendum, nulla elit rhoncus nulla, sed efficitur est mi nec urna. Phasellus imperdiet libero sed justo scelerisque, vitae porta ante sodales. Suspendisse potenti. Nulla facilisi. Cras vitae tincidunt nibh, in dapibus libero. Sed tincidunt dapibus justo, nec gravida tortor malesuada a. Etiam ornare faucibus nisl, vel tincidunt nisl gravida sit amet.
@@ -59,7 +59,7 @@ export const posts = [
     category: "Cybersecurity",
   },
   {
-    id: "Cybersecurity 4",
+    id: "Cybersecurity-4",
     title: "Auditing Data Access Controls for Privacy Regulation Adherence",
     excerpt: "In an era where data breaches and privacy violations continue to make headlines, organizations worldwide face increased pressure to implement and verify robust data access controls.",
     content:  `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis, ipsum at gravida bibendum, nulla elit rhoncus nulla, sed efficitur est mi nec urna. Phasellus imperdiet libero sed justo scelerisque, vitae porta ante sodales. Suspendisse potenti. Nulla facilisi. Cras vitae tincidunt nibh, in dapibus libero. Sed tincidunt dapibus justo, nec gravida tortor malesuada a. Etiam ornare faucibus nisl, vel tincidunt nisl gravida sit amet.
@@ -76,7 +76,7 @@ export const posts = [
     category: "Cybersecurity",
   },
   {
-    id: "Cybersecurity 5",
+    id: "Cybersecurity-5",
     title: "Protecting Sensitive Data in Enterprise Systems for Privacy Compliance",
     excerpt: "As data breaches continue to make headlines and regulatory penalties reach record highs, organizations face mounting pressure to strengthen their enterprise data protection frameworks.",
     content:  `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis, ipsum at gravida bibendum, nulla elit rhoncus nulla, sed efficitur est mi nec urna. Phasellus imperdiet libero sed justo scelerisque, vitae porta ante sodales. Suspendisse potenti. Nulla facilisi. Cras vitae tincidunt nibh, in dapibus libero. Sed tincidunt dapibus justo, nec gravida tortor malesuada a. Etiam ornare faucibus nisl, vel tincidunt nisl gravida sit amet.
@@ -93,7 +93,7 @@ export const posts = [
     category: "Cybersecurity",
   },
   {
-    id: "Cybersecurity 6",
+    id: "Cybersecurity-6",
     title: "Achieving Data Privacy Regulation Compliance in 2025 Frameworks",
     excerpt: "As we progress through 2025, organizations worldwide face an increasingly intricate web of data privacy regulations. With new laws taking effect across multiple jurisdictions and existing frameworks becoming more stringent, achieving compliance has never been more challenging or essential.",
     content:  `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis, ipsum at gravida bibendum, nulla elit rhoncus nulla, sed efficitur est mi nec urna. Phasellus imperdiet libero sed justo scelerisque, vitae porta ante sodales. Suspendisse potenti. Nulla facilisi. Cras vitae tincidunt nibh, in dapibus libero. Sed tincidunt dapibus justo, nec gravida tortor malesuada a. Etiam ornare faucibus nisl, vel tincidunt nisl gravida sit amet.
@@ -110,7 +110,7 @@ export const posts = [
     category: "Cybersecurity",
   },
   {
-    id: "Cybersecurity 7",
+    id: "Cybersecurity-7",
     title: "GBM enhances cybersecurity at PRIME Health with comprehensive managed detection and response service",
     excerpt: "The strategic partnership positions PRIME Health as a future-ready healthcare provider that prioritises both digital security and patient trust. The collaboration involves 24×7 threat monitoring, detection and response, technology enablement, advanced incident response, healthcare-specific threat intelligence, brand protection and security posture improvement.​​​​​​",
     content:  `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis, ipsum at gravida bibendum, nulla elit rhoncus nulla, sed efficitur est mi nec urna. Phasellus imperdiet libero sed justo scelerisque, vitae porta ante sodales. Suspendisse potenti. Nulla facilisi. Cras vitae tincidunt nibh, in dapibus libero. Sed tincidunt dapibus justo, nec gravida tortor malesuada a. Etiam ornare faucibus nisl, vel tincidunt nisl gravida sit amet.
@@ -127,7 +127,7 @@ export const posts = [
     category: "Cybersecurity",
   },
   {
-    id: "Cybersecurity 8",
+    id: "Cybersecurity-8",
     title: "U.S. DoJ Seizes 4 Domains Supporting Cybercrime Crypting Services in Global Operation",
     excerpt: "A multinational law enforcement operation has resulted in the takedown of an online cybercrime syndicate that offered services to threat actors to ensure that their malicious software stayed undetected from security software.",
     content:  `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis, ipsum at gravida bibendum, nulla elit rhoncus nulla, sed efficitur est mi nec urna. Phasellus imperdiet libero sed justo scelerisque, vitae porta ante sodales. Suspendisse potenti. Nulla facilisi. Cras vitae tincidunt nibh, in dapibus libero. Sed tincidunt dapibus justo, nec gravida tortor malesuada a. Etiam ornare faucibus nisl, vel tincidunt nisl gravida sit amet.
@@ -144,7 +144,7 @@ export const posts = [
     category: "Cybersecurity",
   },
   {
-    id: "Cybersecurity 9",
+    id: "Cybersecurity-9",
     title: "UK to create new Cyber and Electromagnetic Command to take electronic warfare to Russia and China",
     excerpt: "The UK is to create a new Cyber and Electromagnetic Command to take electronic warfare to Russia and China as part of the Strategic Defence Review (SDR), to be published on Monday.",
     content:  `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis, ipsum at gravida bibendum, nulla elit rhoncus nulla, sed efficitur est mi nec urna. Phasellus imperdiet libero sed justo scelerisque, vitae porta ante sodales. Suspendisse potenti. Nulla facilisi. Cras vitae tincidunt nibh, in dapibus libero. Sed tincidunt dapibus justo, nec gravida tortor malesuada a. Etiam ornare faucibus nisl, vel tincidunt nisl gravida sit amet.
@@ -161,7 +161,7 @@ export const posts = [
     category: "Cybersecurity",
   },
   {
-    id:"Cybersecurity 10",
+    id:"Cybersecurity-10",
     title: "Cyber security experts reveal the chilling number of images predators need to make deepfakes of children",
     excerpt: "Cybersecurity experts have revealed that predators need just 20 images to create deepfake videos of children, prompting urgent warnings over the growing dangers of sharing family photos online.",
     content:  `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis, ipsum at gravida bibendum, nulla elit rhoncus nulla, sed efficitur est mi nec urna. Phasellus imperdiet libero sed justo scelerisque, vitae porta ante sodales. Suspendisse potenti. Nulla facilisi. Cras vitae tincidunt nibh, in dapibus libero. Sed tincidunt dapibus justo, nec gravida tortor malesuada a. Etiam ornare faucibus nisl, vel tincidunt nisl gravida sit amet.
@@ -178,7 +178,7 @@ export const posts = [
     category: "Cybersecurity",
   },
   {
-    id: "Cybersecurity 11",
+    id: "Cybersecurity-11",
     title: "UK invests in 'cyber army', and turning lead into gold",
     excerpt: "In this edition of The Naked Scientists: The UK announces a 1 billion pound budget for a cyber army: but what will these keyboard warriors be doing? Also, a vaccine for norovirus that is just one pill. And, physicists at CERN turn lead into gold, albeit briefly!",
     content:  `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis, ipsum at gravida bibendum, nulla elit rhoncus nulla, sed efficitur est mi nec urna. Phasellus imperdiet libero sed justo scelerisque, vitae porta ante sodales. Suspendisse potenti. Nulla facilisi. Cras vitae tincidunt nibh, in dapibus libero. Sed tincidunt dapibus justo, nec gravida tortor malesuada a. Etiam ornare faucibus nisl, vel tincidunt nisl gravida sit amet.
@@ -195,7 +195,7 @@ export const posts = [
     category: "Cybersecurity",
   },
   {
-    id: "Cybersecurity 12",
+    id: "Cybersecurity-12",
     title: "Hackers Drop Info-Stealing Malware On TikTok Users Device Using AI-Generated Videos",
     excerpt: "Cybercriminals have weaponized artificial intelligence to create sophisticated social engineering attacks on TikTok, using AI-generated tutorial videos to distribute dangerous information-stealing malware that has already reached hundreds of thousands of users across the platform.",
     content:  `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis, ipsum at gravida bibendum, nulla elit rhoncus nulla, sed efficitur est mi nec urna. Phasellus imperdiet libero sed justo scelerisque, vitae porta ante sodales. Suspendisse potenti. Nulla facilisi. Cras vitae tincidunt nibh, in dapibus libero. Sed tincidunt dapibus justo, nec gravida tortor malesuada a. Etiam ornare faucibus nisl, vel tincidunt nisl gravida sit amet.

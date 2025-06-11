@@ -1,7 +1,7 @@
 import paths from "../assets/paths-niki.png";
 export const posts = [
   {
-    id: "IOT 1",
+    id: "IOT-1",
     title: "Quectel Introduces KCM0A5S Wi-SUN Module for Smart City and Smart Utility Devices",
     excerpt: "Quectel Wireless Solutions, a global IoT solutions provider, has launched the Quectel KCM0A5S, a high-performance Wi-SUN module designed for smart applications such as street lighting, precision agriculture, industrial IoT, smart meters and smart cities.",
     content: `Based on Silicon Labs EFR32FG25, a sub-GHz low power wireless System on Chip, and featuring an ARM Cortex-M33 processor with a frequency of up to 97.5MHz, the module includes built-in 256KB RAM and 2MB Flash memory, ensuring efficient performance.\n
@@ -16,7 +16,7 @@ export const posts = [
     category: "IOT",
   },
   {
-    id: "IOT 2",
+    id: "IOT-2",
     title: "akenza Strengthens Global CaaS Leadership with Netmore LoRaWAN® Integration",
     excerpt: "akenza, the Swiss-based leader in low-code IoT device and connectivity management, today announced a platform integration with global IoT operator Netmore as part of its Connectivity as a Service (CaaS) offering to make it even easier to get connected.",
     content: `
@@ -34,7 +34,7 @@ export const posts = [
     category: "IOT",
   },
   {
-    id: "IOT 3",
+    id: "IOT-3",
     title: "FBI Issues Announcement Regarding New Internet of Things Exploitation",
     excerpt: "The Federal Bureau of Investigation (FBI) has issued a Public Service Announcement to warn the public about cyber criminals exploiting Internet of Things (IoT) devices connected to home networks to conduct criminal activity using the BADBOX 2.0 botnet.",
     content: `
@@ -52,7 +52,7 @@ export const posts = [
     category: "IOT",
   },
   {
-    id: "IOT 4",
+    id: "IOT-4",
     title: "Indoor 5G Market Growth Accelerated by AI IoT and Network Architecture Innovations Enhancing Indoor Connectivity Capabilities",
     excerpt: "According to the latest research by InsightAce Analytic, the Global Indoor 5G Market is valued at USD 14.6 Bn in 2024, and it is expected to reach USD 119.9 Bn by the year 2034, with a CAGR of 23.8% during the forecast period of 2025-2034.",
     content: `
@@ -70,7 +70,7 @@ export const posts = [
     category: "IOT",
   },
   {
-    id: "IOT 5",
+    id: "IOT-5",
     title: "eNVM-based SoC development platform for IoT",
     excerpt: "Faraday Technology Corporation has introduced its latest development platform, FlashKit-22RRAM, designed to accelerate high-performance IoT and MCU applications.",
     content: `
@@ -88,7 +88,7 @@ export const posts = [
     category: "IOT",
   },
   {
-    id: "IOT 6",
+    id: "IOT-6",
     title: "Cellular IoT: Latest GSMA eSIM Standard Critical to 6.5 Billion Connections Globally by 2030",
     excerpt: "A new study from Juniper Research, the foremost experts in telecommunications and connectivity, has found the global number of cellular IoT connections will grow by 60% between 2025 and 2030; creating a net addition of 2.4 billion connections. According to Juniper Research, SGP.32, the GSMA’s new eSIM specification for IoT, will define the opportunity for operators, IoT Mobile Virtual Network Operators (MVNO), and others to capitalise on this growth.",
     content: `
@@ -106,7 +106,7 @@ export const posts = [
     category: "IOT",
   },
   {
-    id: "IOT 7",
+    id: "IOT-7",
     title: "Queclink launches GL52RP: Compact LoRa tracker built for long-term asset security",
     excerpt: "Queclink, a provider of IoT devices and solutions, introduced the GL52RP, a compact LoRaWAN tracker built for asset monitoring, stolen vehicle recovery and finance-related applications. With its long-range communication, extended battery life, and discreet design, the GL52RP is tailored for businesses looking to reduce operational overhead while improving visibility across assets.",
     content: `
@@ -124,7 +124,7 @@ export const posts = [
     category: "IOT",
   },
   {
-    id: "IOT 8",
+    id: "IOT-8",
     title: "How PK Analysis Software and IoT Are Transforming the Pharmaceutical Industry",
     excerpt: "The pharmaceutical industry is undergoing a profound transformation, driven by the integration of advanced data modeling tools and Internet of Things (IoT) technologies. As drug development becomes increasingly complex, these innovations are helping companies improve efficiency, accuracy, and patient outcomes. From early-stage research to manufacturing and post-market monitoring, the combination of pharmacokinetic (PK) modeling and IoT is reshaping every step of the pharmaceutical pipeline.",
     content: `
@@ -142,7 +142,7 @@ export const posts = [
     category: "IOT",
   },
   {
-    id: "IOT 9",
+    id: "IOT-9",
     title: "BlackBerry Shares Climb 47% as Company Refocuses on IoT and Core Business",
     excerpt: "The rally follows a series of strategic changes spearheaded by CEO John Giamatteo, including the sale of BlackBerry’s underperforming Cylance cybersecurity unit to Arctic Wolf, a move valued at around $160 million.",
     content: `
@@ -160,7 +160,7 @@ export const posts = [
     category: "IOT",
   },
   {
-    id: "IOT 10",
+    id: "IOT-10",
     title: "Robustel’s EG5120 Built on NXP i.MX 8 to Power Scalable Industrial IoT",
     excerpt: "The EG5120 is engineered to act as an on-site computer securely linking Operational Technology (OT) and Information Technology (IT) networks for applications requiring local decision-making to reduce latency, lower cloud-related costs, and ensure operational resilience.",
     content: `
@@ -178,7 +178,7 @@ export const posts = [
     category: "IOT",
   },
   {
-    id: "IOT 11",
+    id: "IOT-11",
     title: "Smart Homes in 2025: How AI and IoT Are Transforming the Way We Live",
     excerpt: `Introduction Smart homes are no longer just futuristic concepts from sci-fi movies-they're our present and rapidly evolving future. As we enter 2025, the fusion of Artificial Intelligence (AI) and the Internet of Things (IoT) is redefining what it means to live in a "connected" space. From voice-activated lighting and AI-driven security systems to smart refrigerators and energy-efficient automation, our homes are getting smarter, faster, and more intuitive. For enterprise-level infrastructure powering these systems.`,
     content: `
@@ -196,7 +196,7 @@ export const posts = [
     category: "IOT",
   },
   {
-    id: "IOT 12",
+    id: "IOT-12",
     title: "Brazil's telecom race: Who's gaining ground in 5G, IoT and fiber?",
     excerpt: "Mobile accesses, especially those aimed at IoT and M2M devices, were the main highlights of the Brazilian telecom market in April, according to statistics from regulator Anatel. In total, the country ended the fourth month of 2025 with 348mn telecom accesses in service, including mobile telephony, fixed broadband, pay TV and fixed telephony.",
     content: `

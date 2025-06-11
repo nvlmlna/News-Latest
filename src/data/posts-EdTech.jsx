@@ -1,7 +1,7 @@
 import paths from "../assets/paths-niki.png";
 export const posts = [
   {
-    id: "Edtech 1",
+    id: "Edtech-1",
     title: "Co-creation HUB reaffirms its commitment to promoting quality education through technology-driven education solutions in Africa",
     excerpt: "This year’s cohort reflects a growing commitment to gender diversity and inclusion within Africa’s innovation ecosystem.",
     content: `
@@ -22,7 +22,7 @@ export const posts = [
     category: "Edtech",
   },
   {
-    id: "Edtech 2",
+    id: "Edtech-2",
     title: "Mengting Hou, Founder and CEO of Mimir, Named One of Three Finalists in Language Education Technology Competition",
     excerpt: "Most entrepreneurs start with capital, connections, or a last name that opens doors. Mengting Hou had none of that. Only grit, guts, and a dream.",
     content: `
@@ -40,7 +40,7 @@ export const posts = [
     category: "Edtech",
   },
   {
-    id: "Edtech 3",
+    id: "Edtech-3",
     title: "How Bold Leadership Builds Personalized Pathways",
     excerpt: "If you’ve ever watched a student light up after cracking a tough problem or finally connecting the dots, you know learning is personal.",
     content: `
@@ -58,7 +58,7 @@ export const posts = [
     category: "Edtech",
   },
   {
-    id: "Edtech 4",
+    id: "Edtech-4",
     title: "Huawei hosts ICT Competition and AI Accelerating Education Transformation Summit in Shenzhen, China",
     excerpt: "In its ninth year, the Huawei ICT Competition attracted entrants from more than 210,000 students and 2,000 colleges and universities. After national and regional competitions, 179 teams from 48 countries reached the global final in Shenzhen.",
     content: `
@@ -76,7 +76,7 @@ export const posts = [
     category: "Edtech",
   },
   {
-    id: "Edtech 5",
+    id: "Edtech-5",
     title: "ViewSonic eyes 300% growth in school partnerships with Future School EdTech push",
     excerpt: "ViewSonic has announced plans to grow its Future School Program by up to 300%, aiming to bring digital classrooms, training, and EdTech tools to more schools across India. The expansion follows pilot runs in Chennai and Lucknow, with a new focus on semi-urban and rural areas.",
     content: `
@@ -94,7 +94,7 @@ export const posts = [
     category: "Edtech",
   },
   {
-    id: "Edtech 6",
+    id: "Edtech-6",
     title: "International experts to discuss AI-assisted learning and education technology advances",
     excerpt: "Teachers, researchers, academics and education professionals will gather to discuss innovation in the field of education and the use of ICT in learning",
     content: `
@@ -112,7 +112,7 @@ export const posts = [
     category: "Edtech",
   },
   {
-    id: "Edtech 7",
+    id: "Edtech-7",
     title: "School districts hit with extortion attempts months after education tech data breach",
     excerpt: "The attempted extortion has so far targeted schools in Canada and North Carolina.",
     content: `
@@ -130,7 +130,7 @@ export const posts = [
     category: "Edtech",
   },
   {
-    id: "Edtech 8",
+    id: "Edtech-8",
     title: "University update on higher education, immigration matters",
     excerpt: "As a public land grant university with an inclusive mission to engage all citizens of the commonwealth, our role is to facilitate constructive dialogue and understanding across differences.",
     content: `
@@ -148,7 +148,7 @@ export const posts = [
     category: "Edtech",
   },
   {
-    id: "Edtech 9",
+    id: "Edtech-9",
     title: "U of A students are using extended reality technology to transform retail education",
     excerpt: "Using this technology, students in the retailing course interact with realistic, data-driven computer simulations that allow them to test ideas and explore retail environments in ways that would be impossible in a traditional classroom.",
     content: `
@@ -166,7 +166,7 @@ export const posts = [
     category: "Edtech",
   },
   {
-    id: "Edtech 10",
+    id: "Edtech-10",
     title: "Turnitin study finds students more concerned than educators about AI’s impact on learning",
     excerpt: "Global EdTech company Turnitin has released new research showing that students are more worried about the use of artificial intelligence in education than educators or academic administrators.",
     content: `
@@ -184,7 +184,7 @@ export const posts = [
     category: "Edtech",
   },
   {
-    id: "Edtech 11",
+    id: "Edtech-11",
     title: "Enhancing the future of teaching and learning at MIT",
     excerpt: "The MIT Festival of Learning sparked discussions on better integrating a sense of purpose and social responsibility into hands-on education.",
     content: `
@@ -202,7 +202,7 @@ export const posts = [
     category: "Edtech",
   },
   {
-    id: "Edtech 12",
+    id: "Edtech-12",
     title: "The future of education: How EdTech is transforming learning",
     excerpt: "Today, educational technology (EdTech) is reshaping how students learn and teachers teach. From interactive apps and online courses to virtual reality and AI tutors, technology is bringing new opportunities to the world of education.",
     content: `
