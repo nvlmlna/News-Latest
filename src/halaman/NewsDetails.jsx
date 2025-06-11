@@ -25,7 +25,7 @@ function NewsDetails() {
         {/* Konten berita dengan \n -> <p> */}
         <div className="select-none pointer-events-none">
           {news.content.split('\n').map((line, index) => (
-            <p key={index} className="mb-2 mr-64">
+            <p key={index} className="mb-2 md:mr-64">
               {line}
             </p>
           ))}
@@ -35,7 +35,7 @@ function NewsDetails() {
         <div className="absolute bottom-0 left-0 w-full h-56 bg-gradient-to-t from-gray-300 dark:from-gray-800 to-transparent"></div>
       
         {/* Tombol Baca Selengkapnya di atas blur */}
-        <div className="absolute bottom-8 right-0 w-full flex justify-center z-10 mr-32">
+        <div className="absolute bottom-8 md:right-0 w-full flex justify-center z-10 md:mr-32">
           <a
             href={news.url}
             target="_blank"
