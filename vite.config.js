@@ -4,11 +4,12 @@ import react from '@vitejs/plugin-react'
 const repoName = 'News-W';
 
 export default defineConfig({
-  base: `/${repoName}/`, 
+  base: process.env.VITE_BASE_PATH || "/News-W", 
   plugins: [react()],
   server: {
     hmr: {
       overlay: false
     }
   }
+
 });
