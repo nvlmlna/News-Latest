@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Profile from "./ProfileDropdown";
 import { useNavigate, useLocation, useSearchParams } from "react-router-dom";
 import { searchPosts, allposts } from "../data/index";
+import BlueOcean from "../assets/BlueOcean.png"
 import { div, input, span } from "framer-motion/client";
 
 export default function Header() {
@@ -132,9 +133,10 @@ useEffect(() => {
         <div className="flex items-center justify-between w-full md:w-auto">
           <button
             onClick={handleLogoClick}
-            className="text-xl md:text-2xl lg:text-3xl font-bold tracking-widest text-gray-400 dark:text-white whitespace-nowrap focus:outline-none hover:text-gray-600 dark:hover:text-gray-300 transition-colors duration-200 max-w-[120px] px-2 py-1"
+            className="flex items-center text-xl md:text-2xl lg:text-3xl font-bold tracking-widest text-gray-400 dark:text-white whitespace-nowrap focus:outline-none hover:text-gray-600 dark:hover:text-gray-300 transition-colors duration-200 max-w-[120px] px-2 py-1"
           >
-            NEWS
+            <img src={BlueOcean} alt="Logo" className="h-8 md:h-11 object-contain" />
+            <span>NEWS</span>
           </button>
           <div className="flex items-center gap-2 md:hidden">
             {/* Theme Toggle (Mobile) */}

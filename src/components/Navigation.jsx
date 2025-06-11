@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 export default function Navigation() {
   const [activeTab, setActiveTab] = useState("Home");
   const navigate = useNavigate();
-  const scrollingText = "ini teks berjalan nya disini ";
+  const scrollingText = "Cellular IoT: Latest GSMA eSIM Standard Critical to 6.5 Billion Connections Globally by 2030";
 
   const tabs = ["Home", "Latest News", "Trending"];
 
