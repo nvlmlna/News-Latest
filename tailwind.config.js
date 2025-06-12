@@ -4,6 +4,11 @@ export default {
   darkMode: 'class', // <-- TAMBAHKAN INI
   theme: {
     extend: {
+      zIndex:{
+        '60': '60'
+        '70': '70'
+        '80': '80'
+      }
       keyframes: {
         marquee: {
           '0%': { transform: 'translateX(100%)' },
