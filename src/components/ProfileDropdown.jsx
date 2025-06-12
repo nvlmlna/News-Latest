@@ -120,7 +120,7 @@ export default function Profile() {
     <AnimatePresence>
       {showLoginModal && (
         <motion.div 
-          className="fixed inset-0 backdrop-blur-sm bg-black/40 flex items-center justify-center z-50"
+          className="fixed inset-0 backdrop-blur-sm bg-black/40 flex items-center justify-center z-60"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
@@ -171,7 +171,7 @@ export default function Profile() {
     <AnimatePresence>
       {showRegisterModal && (
         <motion.div 
-          className="fixed inset-0 backdrop-blur-sm bg-black/40 flex items-center justify-center z-50"
+          className="fixed inset-0 backdrop-blur-sm bg-black/40 flex items-center justify-center z-60"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
