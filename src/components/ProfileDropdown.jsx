@@ -79,7 +79,7 @@ export default function Profile() {
   
     {/* dropdown menu */}
     <div 
-      className={`absolute right-0 mt-2 w-56 bg-white dark:bg-gray-800 rounded-lg shadow-xl py-1 z-50 border border-gray-100 dark:border-gray-700
+      className={`absolute right-0 mt-2 w-56 bg-white dark:bg-gray-800 rounded-lg shadow-xl py-1 z-80 border border-gray-100 dark:border-gray-700
         transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)]
         ${isOpen ? 'opacity-100 scale-100 translate-y-0 visible' : 'opacity-0 scale-95 -translate-y-2 invisible'}
       `}
