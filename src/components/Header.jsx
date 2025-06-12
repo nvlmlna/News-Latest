@@ -283,7 +283,7 @@ useEffect(() => {
                       key={post.id}
                       className="px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer"
                       onClick={() => {
-                        window.open(post.url, "_blank");
+                        window.open(window.location.href = `/News-W/${post.id}`);
                         setQuery("");
                         setSearchResults([]);
                       }}
